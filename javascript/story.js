@@ -1,16 +1,43 @@
 $(document).ready(function() {
-    $("nextArrowTwo").hide();
-    $("secondLine").hide();
+    $("#nextArrowTwo").hide();
+    $("#secondLine").hide();
+    $("#thirdLine").hide();
+    $("#nextArrowThree").hide();
+    $("#fourthLine").hide();
+    $("#getStarted").hide();
+    
 
     $("#nextArrowOne").on("click", function() {
-        $("nextArrowTwo").show();
-        $("secondLine").show();
+        $("#nextArrowOne").hide();
+        $("#nextArrowTwo").show();
         
-
-
+        $("#secondLine").show();
     });
 
+    $("#nextArrowTwo").on("click", function() {
+        $("#nextArrowTwo").hide();
+        $("#thirdLine").show();
+        $("#nextArrowThree").show();
+    });  
+
+    $("#nextArrowThree").on("click", function() {
+        $("#nextArrowThree").hide();
+        $("#fourthLine").show();
+        $("#getStarted").show();
+    });  
+
+    $("#nextArrowFour").on("click", function() {
+        $("#nextArrowThree").hide();
+        $("#fourthLine").show();
+        $("#getStarted").show();
+    });  
+
 // On click function to prompt users through beginning - Click next to read rules - Enter word and click next to enter another word - pretty box
+    $("#getStarted").on("click", function() {
+        var country = prompt("Please enter a Country");
+        var noun = prompt("Please enter a Noun");
+
+    })
 
 // Make an array/loop to allow users to enter their own words
 
