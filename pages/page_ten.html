@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- GOOGLE FONTS -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
         integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
@@ -21,22 +23,26 @@
     <title>Jasmine goes to Code Camp</title>
 
     <style>
-        body {
-            background-image: url(../images/pageTen.jpg);
-            color: white;
-            background-repeat: no-repeat;
-            background-size: cover;
+     
+     #image {
             width: 100%;
             height: auto;
+
         }
 
-        #wordBox {
+        #wordBox, .text-block {
             background-color: aliceblue;
             border-style: outset;
             color: black;
             padding: 10px;
             opacity: .6;
+            margin-top: 20px;
+            position: absolute;
+            top: 5px;
+            text-align: center;
+                       
         }
+
 
        
     </style>
@@ -45,8 +51,9 @@
 
 <body>
     <div class="container">
+            <img src="../images/pageTen.jpg" id="image" class="row">
 
-        <div id="wordBox">
+        <div id="wordBox" class="text-block">
             <h5>PLOT TWIST: Aladdin reveals he didn't actually go to code camp. He found a NOUN lamp, and wished the skills into being. Though he did NOUN her, she was even more proud of learning it on her own, and grateful for his ADJECTIVE support throughout the journey.</h5>
             <h5>THE END</h5>
             <br>

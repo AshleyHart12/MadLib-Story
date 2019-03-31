@@ -3,7 +3,7 @@
 
 <head>
 
-
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- GOOGLE FONTS -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
         integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
@@ -22,34 +22,45 @@
 
     <title>Jasmine goes to Code Camp</title>
     <style>
-        body {
-            background-image: url(../images/pageThree.png);
-            color: white;
-            background-repeat: no-repeat;
+    
+    #image {
             width: 100%;
-            height: 100%;
+            height: auto;
+
         }
 
-        #wordBox {
+        #wordBox, .text-block {
             background-color: aliceblue;
             border-style: outset;
             color: black;
             padding: 10px;
             opacity: .6;
+            margin-top: 20px;
+            position: absolute;
+            top: 5px;
+            text-align: center;
+                       
         }
+        
     </style>
 
 </head>
 
 <body>
-    <div class="container">
 
-        <div id="wordBox">
+    <div class="container">
+     <img src="../images/pageThree.png" id="image" class="row">
+    
+
+        <div id="wordBox" class="text-block">
             <h5>One day, she leaves a note for her family, and sets off on her own to explore the ADJECTIVE world that
                 surrounds her. </h5>
             <a href="page_four.html"><i class="material-icons" id="nextArrow">arrow_forward</i></a>
         </div>
+  
     </div>
+</div>
+
 
 </body>
 
